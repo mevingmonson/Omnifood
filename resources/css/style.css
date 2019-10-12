@@ -185,3 +185,49 @@ section {
 .main-nav li a:active {
 	border-bottom: 2px solid #f39c12;
 }
+
+/****		FAST FOOD SECTION		****/
+
+.section-features .long-copy {
+	margin-bottom: 30px;
+}
+
+/****  	MEALS SECTION	****/
+
+.section-meals {
+	padding: 0px;
+}
+
+.meals-showcase {
+	list-style: none;
+	width: 100%;
+}
+
+.meals-showcase li {
+	float: right;
+	display: block;
+	width: 25%;
+}
+
+.meals-photo {
+	width: 100%;
+	margin: 0px;
+	overflow: hidden;
+	background-color: #000;
+
+}
+
+.meals-photo img {
+	width: 100%;
+	height: auto;
+	opacity: 0.7;
+	transform: scale(1.15);
+	transition: transform 0.5s , opacity 0.5s;
+}
+
+.meals-photo img:hover {
+	transform: scale(1.03);
+	opacity: 1;
+}
+
+
