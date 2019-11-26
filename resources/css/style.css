@@ -142,7 +142,9 @@ section {
 
 /**   BUTTONS    **/
 
-.btn {
+.btn,
+input[type=submit]
+{
 	display: inline-block;
 	padding: 10px 30px;
 	text-decoration: none;
@@ -151,7 +153,9 @@ section {
 	transition: background-color 0.2s, color 0.2s, border 0.2s;
 }
 
-.btn-full {
+.btn-full,
+input[type=submit]
+{
 	background-color: #f39c12;
 	border: 1px solid #f39c12;
 	color: white;
@@ -166,7 +170,10 @@ section {
 
 
 .btn:hover,
-.btn:active {
+.btn:active,
+input[type=submit]:hover,
+input[type=submit]:active
+{
 	background-color: #d8890b;
 	color: white;
 }
@@ -434,3 +441,217 @@ cite img{
 .plan-box li{
 	padding: 5px 0;
 }
+
+
+
+/*****			FORM		****/
+
+.contact-form{
+	width: 60%;
+	margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea{
+	width: 100%;
+	padding: 7px;
+	border-radius: 5px;
+	border: 1px solid #f39c12;
+}
+
+
+textarea{
+	height:100px;
+}
+
+*:focus{
+	outline: none;
+}
+
+.checkbox-container {
+	display: inline-block;
+    float: left;
+    width: 26px;
+    box-sizing: border-box;
+    text-align:center;
+}
+
+
+/****	 	Styling Checkbox Starts 		*****/
+
+
+.checkbox-label {
+    display: inline-block;
+    position: relative;
+    margin: auto;
+    cursor: pointer;
+    font-size: 22px;
+    line-height: 24px;
+    height: 24px;
+    width: 24px;
+    clear: both;
+}
+
+.checkbox-label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.checkbox-label .checkbox-custom {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 24px;
+    width: 24px;
+    background-color: transparent;
+    border-radius: 5px;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    border: 2px solid #f39c12;
+}
+
+.checkbox-label input:checked ~ .checkbox-custom {
+    background-color: #f39c12;
+    border-radius: 5px;
+    -webkit-transform: rotate(0deg) scale(1);
+    -ms-transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1);
+    opacity:1;
+    border: 2px solid #f39c12;
+}
+
+.checkbox-label .checkbox-custom::after {
+    position: absolute;
+    content: "";
+    left: 12px;
+    top: 12px;
+    height: 0px;
+    width: 0px;
+    border-radius: 5px;
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(0deg) scale(0);
+    -ms-transform: rotate(0deg) scale(0);
+    transform: rotate(0deg) scale(0);
+    opacity:1;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+}
+
+.checkbox-label input:checked ~ .checkbox-custom::after {
+  -webkit-transform: rotate(45deg) scale(1);
+  -ms-transform: rotate(45deg) scale(1);
+  transform: rotate(45deg) scale(1);
+  opacity:1;
+  left: 8px;
+  top: 3px;
+  width: 6px;
+  height: 12px;
+  border: solid #fff;
+  border-width: 0 2px 2px 0;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+/* For Ripple Effect */
+.checkbox-label .checkbox-custom::before {
+    position: absolute;
+    content: "";
+    left: 10px;
+    top: 10px;
+    width: 0px;
+    height: 0px;
+    border-radius: 5px;
+    border: 2px solid #f39c12;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scale(0);    
+}
+
+.checkbox-label input:checked ~ .checkbox-custom::before {
+    left: 1px;
+    top: 1px;
+    width: 14px;
+    height: 14px;
+    border-radius: 5px;
+    -webkit-transform: scale(3);
+    -ms-transform: scale(3);
+    transform: scale(3);
+    opacity:0;
+    z-index: 999;
+    transition: all 0.3s ease-out;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+}
+
+span.checkboxtext {
+    margin-bottom: 10px;
+    position: absolute;
+    margin: 0px 0px 0px 10px;
+}
+
+
+/****	 	FOOTER		*****/
+
+
+footer{
+	background-color: #333;
+	padding: 30px;
+}
+
+.footer-nav{
+	list-style: none;
+	float: left;
+	font-size: 80%
+}
+
+.social-links{
+	list-style: none;
+	float: right;
+}
+
+.footer-nav li,
+.social-links li{
+	display: inline-block;
+	margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child{
+	margin-right: 0;
+}
+
+.footer-nav a:link,
+.footer-nav a:visited,
+.social-links a:link,
+.social-links a:visited{
+	text-decoration: none;
+	color: #888;
+	border: 0;
+	transition: color 0.2s;
+}
+
+.footer-nav a:hover,
+.footer-nav a:active{
+	color: #ddd;
+}
+
+footer p{
+	color:#888;;
+	text-align: center;
+	font-size: 70%;
+	margin-top: 40px;
+}
+
+
