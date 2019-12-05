@@ -2,9 +2,11 @@
 <html lang="en">
 
 <head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
 	<link rel="stylesheet" type="text/css" href="resources/css/style.css">
+	<link rel="stylesheet" type="text/css" href="resources/css/queries.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&display=swap" rel="stylesheet">
 	<link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
 </head>
@@ -14,23 +16,24 @@
 		<nav>
 			<div class="row">
 				<img src="resources/img/logo-white.png" class="logo">
+				<img src="resources/img/logo.png" alt="black-logo" class="logo-black">
 				<ul class="main-nav">
-					<li><a href="#">Food Delivery</a></li>
-					<li><a href="#">How it works</a></li>
-					<li><a href="#">Our Cities</a></li>
-					<li><a href="#">Sign up</a></li>
+					<li><a href="#features">Food Delivery</a></li>
+					<li><a href="#works">How it works</a></li>
+					<li><a href="#cities">Our Cities</a></li>
+					<li><a href="#plans">Sign up</a></li>
 				</ul>
 			</div>
 		</nav>
 		<div class="hero-text-box">
 			<h1>Goodbye junk food.<br>Hello super healthy meals.</h1>
-			<a class="btn btn-full" href="#">I’m hungry</a>
-			<a class="btn btn-ghost" href="#">Show me more</a>
+			<a class="btn btn-full js--scroll-to-plans" href="#">I’m hungry</a>
+			<a class="btn btn-ghost js--scroll-to-start" href="#">Show me more</a>
 		</div>
 	</header>
 
 
-	<section class="section-features">
+	<section class="section-features js--section-features" id="features">
 		<div class="row">
 			<h2>Get food fast &mdash; not fast food.</h2>
 			<p class="long-copy">
@@ -116,7 +119,7 @@
 		</ul>
 	</section>
 
-	<section class="section-steps">
+	<section class="section-steps" id="works">
 		<div class="row">
 			<h2>How it works &mdash; Simple as 1,2,3</h2>
 		</div>
@@ -143,7 +146,7 @@
 		</div>
 	</section>
 
-	<section>
+	<section id="cities">
 		<div class="row">
 			<h2>We're currently in these cities</h2>
 		</div>
@@ -256,7 +259,7 @@
 
 	</section>
 
-	<section class="section-plans">
+	<section class="section-plans js--section-plans" id="plans">
 		<div class="row">
 			<h2>Start eating healthy today</h2>
 		</div>
@@ -422,8 +425,20 @@
 	</footer>
 
 
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+
+	<script src="https://cdn.jsdelivr.net/npm/selectivizr@1.0.3/selectivizr.min.js"></script>
+	
+	<script src="vendors/js/jquery.waypoints.min.js"></script>
+
+	<script src="resources/js/script.js"></script>
 
 </body>
+
 
 </html>
 
