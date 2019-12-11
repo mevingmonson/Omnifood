@@ -1,4 +1,3 @@
-
 /*
 0 
 480
@@ -6,6 +5,7 @@
 1024
 1200
 */
+
 
 /* big tablet to 1200px (width smaller than 1140 px row) */
 @media only screen and (max-width: 1200px){
@@ -18,6 +18,7 @@
 	.row{padding: 0 2%; }
 
 }
+
 
 /* small tablet to big tablet from 768 to 1023  */
 @media only screen and (max-width: 1023px){
@@ -51,11 +52,7 @@
 	.plan-price{ font-size: 250%; }
 	
 	.contact-form { width: 80%; }
-	
-	
-	
 }
-
 
 
 /* small phone to small tablets 481 to 767px  */
@@ -73,6 +70,44 @@
 	
 	.main-nav{ display: none; }
 	
+	.mobile-nav-icon{
+		display: inline-block;
+	}
+	
+	.main-nav{
+		float: left;
+		margin-top: 30px;
+		margin-left: 25px;
+	}
+	
+	.main-nav li{
+		display: block;
+	}
+	
+	.main-nav li a:link,
+	.main-nav li a:visited{
+		display: block;
+		border: 0;
+		padding: 10px, 0;
+		font-size: 100%;
+	}
+	
+	.sticky .main-nav {
+	margin-top: 10px;
+	}	
+
+	.sticky .main-nav li a:link,
+	.sticky .main-nav li a:visited {
+		padding: 10px 0;
+	}
+	
+	.sticky .mobile-nav-icon{
+		margin-top: 10px;
+	}
+	.sticky .mobile-nav-icon i{
+		color:#555;
+	}
+	
 	h1{ font-size: 180%; }
 	h2{ font-size: 150% }
 	
@@ -80,9 +115,9 @@
 		width:100% ;
 	}
 	
-
 	.works-step { margin-bottom: 20px; }
-	.works-step:last-of-type { margin-bottom: 20px; }
+	.works-step:last-of-type { margin-bottom: 20px; 
+	}
 	
 	.works-step div {
 		width: 40px;
@@ -96,6 +131,7 @@
 	.app-screen { width:40% }
 	
 }
+
 
 /* small phones 0 to 480px  */
 @media only screen and (max-width: 480px){

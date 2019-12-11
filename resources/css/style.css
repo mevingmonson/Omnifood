@@ -11,7 +11,8 @@
 
 }
 
-html,body {
+html,
+body {
 	background-color: #fff;
 	color: #3b3b3b;
 	font-family: 'Lato', 'Arial', sans-serif;
@@ -147,8 +148,7 @@ section {
 /**   BUTTONS    **/
 
 .btn,
-input[type=submit]
-{
+input[type=submit] {
 	display: inline-block;
 	padding: 10px 30px;
 	text-decoration: none;
@@ -159,8 +159,7 @@ input[type=submit]
 }
 
 .btn-full,
-input[type=submit]
-{
+input[type=submit] {
 	background-color: #f39c12;
 	border: 1px solid #f39c12;
 	color: white;
@@ -177,8 +176,7 @@ input[type=submit]
 .btn:hover,
 .btn:active,
 input[type=submit]:hover,
-input[type=submit]:active
-{
+input[type=submit]:active {
 	background-color: #d8890b;
 	color: white;
 }
@@ -193,12 +191,13 @@ input[type=submit]:active
 
 }
 
-.logo-black{
+.logo-black {
 	display: none;
 	height: 50px;
 	margin: 5px 0px;
 	float: left;
 }
+
 /**		MAIN NAVIGATION		**/
 
 .main-nav {
@@ -230,22 +229,35 @@ input[type=submit]:active
 	border-bottom: 2px solid #f39c12;
 }
 
+/****		Mobile Navigation		***/
+
+.mobile-nav-icon{
+	float: right;
+	margin-top: 30px;
+	cursor: pointer;
+	display: none;
+}
+
+.mobile-nav-icon i{
+	font-size: 200%;
+	color: #fff;
+}
 
 /** 	sticky navigation		**/
 
 
-.sticky{
+.sticky {
 	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100%;
-	background-color: rgba(255,255,255,0.95);
+	background-color: rgba(255, 255, 255, 0.95);
 	-webkit-box-shadow: 0 2px 2px #efefef;
 	box-shadow: 0 2px 2px #efefef;
 	z-index: 9999;
 }
 
-.sticky .main-nav{
+.sticky .main-nav {
 	margin-top: 18px;
 }
 
@@ -255,11 +267,11 @@ input[type=submit]:active
 	color: #555;
 }
 
-.sticky .logo-black{
+.sticky .logo-black {
 	display: block;
 }
 
-.sticky .logo{
+.sticky .logo {
 	display: none;
 }
 
@@ -407,7 +419,7 @@ input[type=submit]:active
 	color: white;
 }
 
-blockquote{
+blockquote {
 	padding: 2%;
 	font-style: italic;
 	line-height: 145%;
@@ -415,23 +427,23 @@ blockquote{
 	position: relative;
 }
 
-blockquote:before{
+blockquote:before {
 	content: "\201C";
 	font-size: 500%;
 	display: block;
 	position: absolute;
 	top: -5px;
 	left: -5px;
-	
+
 }
 
-cite{
+cite {
 	font-size: 90%;
 	margin-top: 25px;
 	display: block;
 }
 
-cite img{
+cite img {
 	height: 45px;
 	border-radius: 50%;
 	margin-right: 10px;
@@ -439,7 +451,7 @@ cite img{
 }
 
 
-/*****			SIGN UP		****/
+/*****		SIGN UP		****/
 
 .section-plans {
 	background-color: #f4f4f4;
@@ -452,34 +464,34 @@ cite img{
 	width: 90%;
 	margin-left: 5%;
 	-webkit-box-shadow: 3px 3px 8px -5px #f39c12;
-	box-shadow: 3px 3px 8px -5px #f39c12;		
+	box-shadow: 3px 3px 8px -5px #f39c12;
 }
 
 
-.plan-box div{
+.plan-box div {
 	padding: 15px;
 	border-bottom: 1px solid #e8e8e8;
 }
 
-.plan-box div:first-child{
+.plan-box div:first-child {
 	background-color: #fcfcfc;
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
 }
 
-.plan-box div:last-child{
+.plan-box div:last-child {
 	text-align: center;
 	border: 0;
 }
 
 .plan-price {
-	color:#f39c12;
+	color: #f39c12;
 	font-size: 300%;
-	font-weight:100;
+	font-weight: 100;
 	margin-bottom: 10px;
 }
 
-.plan-price span{
+.plan-price span {
 	font-size: 30%;
 	font-weight: 300;
 }
@@ -488,19 +500,19 @@ cite img{
 	font-size: 80%;
 }
 
-.plan-box ul{
+.plan-box ul {
 	list-style: none;
 }
 
-.plan-box li{
-	padding: 5px 0;
+.plan-box li {
+	padding: 4px 0;
 }
 
 
 
-/*****			FORM		****/
+/*****		FORM		****/
 
-.contact-form{
+.contact-form {
 	width: 60%;
 	margin: 0 auto;
 }
@@ -508,7 +520,7 @@ cite img{
 input[type=text],
 input[type=email],
 select,
-textarea{
+textarea {
 	width: 100%;
 	padding: 7px;
 	border-radius: 5px;
@@ -516,21 +528,21 @@ textarea{
 }
 
 
-textarea{
-	height:100px;
+textarea {
+	height: 100px;
 }
 
-*:focus{
+*:focus {
 	outline: none;
 }
 
 .checkbox-container {
 	display: inline-block;
-    float: left;
-    width: 26px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    text-align:center;
+	float: left;
+	width: 26px;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	text-align: center;
 }
 
 
@@ -538,147 +550,147 @@ textarea{
 
 
 .checkbox-label {
-    display: inline-block;
-    position: relative;
-    margin: auto;
-    cursor: pointer;
-    font-size: 22px;
-    line-height: 24px;
-    height: 24px;
-    width: 24px;
-    clear: both;
+	display: inline-block;
+	position: relative;
+	margin: auto;
+	cursor: pointer;
+	font-size: 22px;
+	line-height: 24px;
+	height: 24px;
+	width: 24px;
+	clear: both;
 }
 
 .checkbox-label input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
 }
 
 .checkbox-label .checkbox-custom {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    height: 24px;
-    width: 24px;
-    background-color: transparent;
-    border-radius: 5px;
-    transition: all 0.3s ease-out;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -ms-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
-    border: 2px solid #f39c12;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 24px;
+	width: 24px;
+	background-color: transparent;
+	border-radius: 5px;
+	transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	border: 2px solid #f39c12;
 }
 
 .checkbox-label input:checked ~ .checkbox-custom {
-    background-color: #f39c12;
-    border-radius: 5px;
-    -webkit-transform: rotate(0deg) scale(1);
-    transform: rotate(0deg) scale(1);
-    opacity:1;
-    border: 2px solid #f39c12;
+	background-color: #f39c12;
+	border-radius: 5px;
+	-webkit-transform: rotate(0deg) scale(1);
+	transform: rotate(0deg) scale(1);
+	opacity: 1;
+	border: 2px solid #f39c12;
 }
 
 .checkbox-label .checkbox-custom::after {
-    position: absolute;
-    content: "";
-    left: 12px;
-    top: 12px;
-    height: 0px;
-    width: 0px;
-    border-radius: 5px;
-    border: solid #fff;
-    border-width: 0 3px 3px 0;
-    -webkit-transform: rotate(0deg) scale(0);
-    transform: rotate(0deg) scale(0);
-    opacity:1;
-    transition: all 0.3s ease-out;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -ms-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
+	position: absolute;
+	content: "";
+	left: 12px;
+	top: 12px;
+	height: 0px;
+	width: 0px;
+	border-radius: 5px;
+	border: solid #fff;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(0deg) scale(0);
+	transform: rotate(0deg) scale(0);
+	opacity: 1;
+	transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
 }
 
 .checkbox-label input:checked ~ .checkbox-custom::after {
-  -webkit-transform: rotate(45deg) scale(1);
-  transform: rotate(45deg) scale(1);
-  opacity:1;
-  left: 8px;
-  top: 3px;
-  width: 6px;
-  height: 12px;
-  border: solid #fff;
-  border-width: 0 2px 2px 0;
-  background-color: transparent;
-  border-radius: 0;
+	-webkit-transform: rotate(45deg) scale(1);
+	transform: rotate(45deg) scale(1);
+	opacity: 1;
+	left: 8px;
+	top: 3px;
+	width: 6px;
+	height: 12px;
+	border: solid #fff;
+	border-width: 0 2px 2px 0;
+	background-color: transparent;
+	border-radius: 0;
 }
 
 /* For Ripple Effect */
 .checkbox-label .checkbox-custom::before {
-    position: absolute;
-    content: "";
-    left: 10px;
-    top: 10px;
-    width: 0px;
-    height: 0px;
-    border-radius: 5px;
-    border: 2px solid #f39c12;
-    -webkit-transform: scale(0);
-    transform: scale(0);    
+	position: absolute;
+	content: "";
+	left: 10px;
+	top: 10px;
+	width: 0px;
+	height: 0px;
+	border-radius: 5px;
+	border: 2px solid #f39c12;
+	-webkit-transform: scale(0);
+	transform: scale(0);
 }
 
 .checkbox-label input:checked ~ .checkbox-custom::before {
-    left: 1px;
-    top: 1px;
-    width: 14px;
-    height: 14px;
-    border-radius: 5px;
-    -webkit-transform: scale(3);
-    transform: scale(3);
-    opacity:0;
-    z-index: 999;
-    transition: all 0.3s ease-out;
-    -webkit-transition: all 0.3s ease-out;
-    -moz-transition: all 0.3s ease-out;
-    -ms-transition: all 0.3s ease-out;
-    -o-transition: all 0.3s ease-out;
+	left: 1px;
+	top: 1px;
+	width: 14px;
+	height: 14px;
+	border-radius: 5px;
+	-webkit-transform: scale(3);
+	transform: scale(3);
+	opacity: 0;
+	z-index: 999;
+	transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
 }
 
 span.checkboxtext {
-    margin-bottom: 10px;
-    position: absolute;
-    margin: 0px 0px 0px 10px;
+	margin-bottom: 10px;
+	position: absolute;
+	margin: 0px 0px 0px 10px;
 }
 
 
 /****	 	FOOTER		*****/
 
 
-footer{
+footer {
 	background-color: #333;
 	padding: 30px;
 	font-size: 80%
 }
 
-.footer-nav{
+.footer-nav {
 	list-style: none;
 	float: left;
 }
 
-.social-links{
+.social-links {
 	list-style: none;
 	float: right;
 }
 
 .footer-nav li,
-.social-links li{
+.social-links li {
 	display: inline-block;
 	margin-right: 20px;
 }
 
 .footer-nav li:last-child,
-.social-links li:last-child{
+.social-links li:last-child {
 	margin-right: 0;
 }
 
@@ -692,12 +704,12 @@ footer{
 }
 
 .footer-nav a:hover,
-.footer-nav a:active{
+.footer-nav a:active {
 	color: #ddd;
 }
 
 .social-links a:link,
-.social-links a:visited{
+.social-links a:visited {
 	text-decoration: none;
 	font-size: 160%;
 	color: #888;
@@ -706,37 +718,56 @@ footer{
 .ion-logo-facebook,
 .ion-logo-twitter,
 .ion-logo-googleplus,
-.ion-logo-instagram{
+.ion-logo-instagram {
 	-webkit-transition: color 0.2s;
 	transition: color 0.2s;
 }
 
-.ion-logo-facebook:hover{
-	color:#3b5999;
+.ion-logo-facebook:hover {
+	color: #3b5999;
 
 }
 
-.ion-logo-twitter:hover{
-	color:#55acee;
+.ion-logo-twitter:hover {
+	color: #55acee;
 }
 
-.ion-logo-googleplus:hover{
-	color:#dd4b39;
+.ion-logo-googleplus:hover {
+	color: #dd4b39;
 }
 
-.ion-logo-instagram:hover{
+.ion-logo-instagram:hover {
 	color: #e4405f;
 }
 
-footer p{
-	color:#888;;
+footer p {
+	color: #888;
+	;
 	text-align: center;
 	margin-top: 20px;
 }
 
 
+/****		Animation 		****/
 
-/****			Responsove 		****/
+.js--wp-1,
+.js--wp-2,
+.js--wp-3 {
+	opacity: 0;
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+}
+
+.js--wp-4{
+	-webkit-animation-duration: 1s;
+	animation-duration: 1s;
+}
+
+.js-w-p-1 .animated,
+.js-w-p-2 .animated,
+.js-w-p-3 .animated {
+	opacity: 1;
+}
 
 
 
